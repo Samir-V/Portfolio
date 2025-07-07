@@ -80,10 +80,19 @@
     window.addEventListener('scroll', updateActiveLink);
 
     links.forEach(link => {
-        link.addEventListener('click', () => {
-        setTimeout(updateActiveLink, 100); 
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth'
         });
+
+        setTimeout(updateActiveLink, 500);
+      }
     });
+  });
   </script> 
 </body>
 </html>
