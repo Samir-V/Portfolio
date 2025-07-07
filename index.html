@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samir-V Portfolio</title>
-  <style>
-    body { font-family: sans-serif; padding: 40px; background: #1e1e1e; color: #fff; }
-    h1 { color: #0ff; }
-    .project { margin-bottom: 30px; }
-  </style>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1U6s9Xb4p+eC5YF8eZHY32RZkVnN0g5af9ewoBjv0yJ"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
 </head>
 <body>
-  <h1>My name is Samir Vertahov</h1>
-  <p>Projects:</p>
+  <section id="intro" class="d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-4 text-light">Hi, I am Samir Vertahov</h1>
+      <p class="lead text-light mt-3">
+        I'm a game developer, specializing in C++ and C#.
+      </p>
+    </div>
+  </section>
 
-  <div class="project">
-    <h2>⚔️ (Test) Sword Clash</h2>
-    <p>2D Unity action game.</p>
-    <a href="https://github.com/TwanPaemeleire/TimeChained">Link to the game repo.</a>
-  </div>
+  <section id="projects" class="text-center py-5">
+    <div class="divider mb-4">
+      <span class="divider-text">Projects</span>
+    </div>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 project-card">
+            <img src="sword-clash.png" class="card-img-top" alt="Sword Clash screenshot">
+            <div class="card-body">
+              <h5 class="card-title">Sword Clash</h5>
+              <p class="card-text">2D action game made in Unity with melee combat and physics-based sword throw.</p>
+              <a href="https://github.com/your-link" class="btn btn-pink">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h2>🚀 (Test) Samir-V 2D Game Engine</h2>
-    <p>A 2D Game Engine written in C++, with account of Design Patterns.</p>
-    <a href="https://github.com/Samir-V/Samir-V-GameEngine">Link to the engine source repo</a>
-  </div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qENqd9dOT+veJuSLCqzOfu09OlbfjWspD7RHi5+7NJG8kk1T0ZTJ5EJo6Bx/1tKf"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

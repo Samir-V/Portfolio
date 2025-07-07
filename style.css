@@ -1,0 +1,63 @@
+
+body {
+  margin: 0;
+  background-color: #0a2342;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+#intro {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 35, 66, 0.9),
+    rgba(10, 35, 66, 0.9)
+  );
+}
+
+.divider {
+  position: relative;
+  border-top: 1px solid #555;
+  width: 200px;
+  margin: 0 auto;
+}
+.divider-text {
+  position: absolute;
+  top: -0.75em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0a2342;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  color: #ff66b2;
+}
+
+
+.btn-pink {
+  background-color: #ff66b2;
+  color: #0a2342;
+  border: none;
+}
+.btn-pink:hover {
+  background-color: #e0559e;
+  color: #ffffff;
+}
+
+
+.project-card {
+  background-color: #112a43;
+  border: none;
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 576px) {
+  .divider {
+    width: 150px;
+  }
+  .divider-text {
+    font-size: 1.25rem;
+  }
+}
