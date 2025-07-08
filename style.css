@@ -156,11 +156,14 @@ body {
 }
 
 .extra-info {
+  background-color: #112a43;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
   padding: 0 16px;
-  background: #0a2342;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .extra-info p {
   margin: 16px 0;
@@ -169,8 +172,9 @@ body {
 }
 
 .project-card.expanded .extra-info {
-  max-height: 200px; 
+  max-height: 500px; 
   padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .extra-info .btn {
