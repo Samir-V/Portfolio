@@ -45,14 +45,9 @@
             <p>2D action game made in Unity with melee combat and physics-based sword throw.</p>
             <a href="https://github.com/your-link">View on GitHub</a>
           </div>
-        </article>
-
-        <article class="project-card">
-          <img src="test.png" alt="Sword Clash screenshot">
-          <div class="content">
-            <h2>Sword Clash</h2>
-            <p>2D action game made in Unity with melee combat and physics-based sword throw.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+          <div class="extra-info">
+            <p>Here’s a bit more detail about Sword Clash—features, engine hacks, art pipeline, etc.</p>
+            <a href="https://github.com/your-link" class="btn">View on GitHub</a>
           </div>
         </article>
 
@@ -65,6 +60,14 @@
           </div>
         </article>
 
+        <article class="project-card">
+          <img src="test.png" alt="Sword Clash screenshot">
+          <div class="content">
+            <h2>Sword Clash</h2>
+            <p>2D action game made in Unity with melee combat and physics-based sword throw.</p>
+            <a href="https://github.com/your-link">View on GitHub</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -122,6 +125,13 @@
       }
     });
   });
+
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('expanded');
+    });
+  });
   </script> 
+
 </body>
 </html>
