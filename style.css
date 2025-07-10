@@ -72,11 +72,11 @@ body {
   flex-direction: column;
   padding: 80px 0 40px; 
 }
-#intro h1 {
+.intro-text h1{
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
-#intro p {
+.intro-text p {
   font-size: 1.25rem;
   color: #ddd;
   margin-bottom: 24px; 
@@ -91,11 +91,12 @@ body {
   border-radius: 12px;
   padding: 20px;
 }
-.about-box p {
+.about-box p{
   margin: 0;
   color: #ccc;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
 }
 
 #projects {
@@ -141,7 +142,7 @@ body {
   cursor: pointer;
 }
 .project-card:hover {
-  box-shadow: 0 4px 12px rgba(255,102,178,0.6);
+  box-shadow: 0 8px 30px rgba(255,102,178,0.6);
   transform: translateY(-3px);
 }
 .project-card img {
