@@ -62,7 +62,7 @@
           <img src="test.png" alt="TimeChained screenshot">
           <div class="extra-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
           </div>
         </article>
 
@@ -73,7 +73,7 @@
           <img src="test.png" alt="TimeChained screenshot">
           <div class="extra-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
           </div>
         </article>
 
@@ -84,7 +84,7 @@
           <img src="test.png" alt="TimeChained screenshot">
           <div class="extra-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
           </div>
         </article>
       </div>
@@ -104,7 +104,7 @@
           <img src="test.png" alt="TimeChained screenshot">
           <div class="extra-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
           </div>
         </article>
 
@@ -115,7 +115,7 @@
           <img src="test.png" alt="TimeChained screenshot">
           <div class="extra-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link">View on GitHub</a>
+            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
           </div>
         </article>
       </div>
@@ -136,14 +136,14 @@
 
         <div class="connect-line">
           <p>Let’s connect! Connect with me on 
-              <a href="https://www.linkedin.com/in/samirs-vertahovs-b3a87a281/" style="color: #ff66b2; text-decoration: none;" target="_blank">
+              <a href="https://www.linkedin.com/in/samirs-vertahovs-b3a87a281/" style="color: #4ecdc4; text-decoration: none;" target="_blank">
                   LinkedIn.
               </a>
           </p>
         </div>
         <div class="mail-line">
           <p>Keep in touch:
-              <a href="mailto:samirs.vertahovs@gmail.com" style="color: #ff66b2; text-decoration: none;" target="_blank">
+              <a href="mailto:samirs.vertahovs@gmail.com" style="color: #4ecdc4; text-decoration: none;" target="_blank">
                   samirs.vertahovs@gmail.com
               </a>
           </p>
@@ -190,6 +190,9 @@
 
   document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', () => {
+      if (event.target.closest('a')) {
+        return; 
+      }
       card.classList.toggle('expanded');
     });
   });

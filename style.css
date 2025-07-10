@@ -9,7 +9,7 @@ header {
   width: 100%;
   background-color: #0a2342;
   z-index: 1000;
-  border-bottom: 1px solid #ff66b2;
+  border-bottom: 1px solid #4ecdc4;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
 }
 nav {
@@ -35,13 +35,13 @@ nav {
 }
 .nav-link.active,
 .nav-link:hover {
-  color: #ff66b2;
+  color: #4ecdc4;
 }
 .nav-link.active::after {
   content: '';
   display: block;
   height: 2px;
-  background: #ff66b2;
+  background: #4ecdc4;
   width: 100%;
   margin-top: 4px;
   border-radius: 1px;
@@ -87,7 +87,7 @@ body {
   max-width: 700px;
   margin: 0 auto;               
   background-color: #112a43;    
-  border: 2px solid #ff66b2;   
+  border: 2px solid #4ecdc4;   
   border-radius: 12px;
   padding: 20px;
 }
@@ -108,8 +108,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: #112a43;      
-  border-top: 2px solid #ff66b2;
-  border-bottom: 2px solid #ff66b2;
+  border-top: 2px solid #4ecdc4;
+  border-bottom: 2px solid #4ecdc4;
   padding: 16px 0;
   margin: 40px 0;
   text-align: center;
@@ -142,7 +142,7 @@ body {
   cursor: pointer;
 }
 .project-card:hover {
-  box-shadow: 0 8px 30px rgba(255,102,178,0.6);
+  box-shadow: 0 8px 30px #3ed6cb;
   transform: translateY(-3px);
 }
 .project-card img {
@@ -171,12 +171,12 @@ body {
   text-align: center;
   padding: 10px 20px;
   border-radius: 4px;
-  background-color: #ff66b2;
+  background-color: #3ed6cb;
   color: #0a2342;
   font-weight: bold;
 }
 .project-card a:hover {
-  background-color: #e0559e;
+  background-color: #2bc2b7;
 }
 
 .extra-info {
@@ -206,18 +206,18 @@ body {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
-  background-color: #ff66b2;
+  background-color: #4ecdc4;
   color: #0a2342;
   font-weight: bold;
   margin-bottom: 16px;
 }
 .extra-info .btn:hover {
-  background-color: #e0559e;
+  background-color: #4ecdc4;
 }
 
 .card-header {
   background-color: #112a43;     
-  border: 2px solid #ff66b2;    
+  border: 2px solid #4ecdc4;    
   border-radius: 12px 12px 0 0;      
   padding: 16px 16px;                
   
@@ -242,7 +242,7 @@ body {
   max-width: 700px;
   margin: 0 auto;               
   background-color: #112a43;    
-  border: 2px solid #ff66b2;   
+  border: 2px solid #4ecdc4;   
   border-radius: 12px;
   padding: 20px;
 }
@@ -260,7 +260,7 @@ body {
   text-align: center;
   padding: 0.75rem 1rem;
   border-radius: 4px;
-  background-color: #ff66b2;
+  background-color: #4ecdc4;
   color: #0a2342;
   font-weight: bold;
   align-self: center;
@@ -268,7 +268,7 @@ body {
 }
 
 .resume-btn:hover {
-  background-color: #e0559e;
+  background-color: #2bc2b7;
 }
 
 .connect-line {
