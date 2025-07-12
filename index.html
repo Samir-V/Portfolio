@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="
+    frame-src 'self' 
+        https://www.youtube.com 
+        https://www.youtube-nocookie.com 
+        https://*.youtube.com 
+        https://*.youtube-nocookie.com;
+    img-src 'self' 
+        https://*.ytimg.com 
+        https://img.youtube.com;
+    ">
   <title>Samir-V Portfolio</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -59,32 +69,74 @@
           <div class="card-header">
             <h2>TimeChained</h2>
           </div>
-          <img src="test.png" alt="TimeChained screenshot">
+          <img src="TimeChainedLogo.png" alt="TimeChainedLogo.png">
           <div class="extra-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
+            <p>TimeChained is a 2D Unity-based game, created for the Beginner's Jam Summer 2025 by a team of 3 developers.</p>
+            <p>Inspired by rogue-likes, TimeChained features a level with obstacles and enemies, that the player has to advance through to reach the final boss.</p>
+            <p>Created fully from scratch in a week, TimeChained placed 23 out of 123 games!</p>
+            <p>Play TimeChained on
+              <a href="https://choclified.itch.io/timechained" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  itch.io!
+              </a>
+            </p>
+            <p>View TimeChained source on
+              <a href="https://github.com/TwanPaemeleire/TimeChained" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  github.
+              </a>
+            </p>
           </div>
         </article>
 
         <article class="project-card">
           <div class="card-header">
-            <h2>TimeChained</h2>
+            <h2>Reel Or Nothing!</h2>
           </div>
-          <img src="test.png" alt="TimeChained screenshot">
+          <img src="ReelOrNothingLogo.png" alt="ReelOrNothingLogo.png">
           <div class="extra-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
+            <p>Reel Or Nothing! is a couch co-op game, created as a part of the study programme at Howest University.</p>
+            <p>Fueled by the idea to make fishing competitive, Reel Or Nothing! throws up to 4 players into a race to become the best fisher of the day.</p>
+            <p>Players must navigate the arena, complete fishing mini-games and prevent others from getting all the fish to themselves.</p>
+            <p>Watch Reel Or Nothing! gameplay trailer below.</p>
+            <iframe class="video-preview" src="https://www.youtube.com/embed/4B4SiHHXRAY?si=JFRvvOrF86InC197" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Play Reel Or Nothing! on
+              <a href="https://jordi16m.itch.io/reelornothing" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  itch.io!
+              </a>
+            </p>
           </div>
         </article>
 
         <article class="project-card">
           <div class="card-header">
-            <h2>TimeChained</h2>
+            <h2>2D Game Engine - feat. Burger Time</h2>
           </div>
-          <img src="test.png" alt="TimeChained screenshot">
+          <img src="TimeChainedLogo.png" alt="BurgerTime.png">
           <div class="extra-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
+            <p>As a part of the study programme at Howest University, we were tasked with creating our very own game engine and prove it's efficiency by developing a game with it.</p>
+            <p>The created engine features it's own event-based collision system, sound system, custom sprite display logic, paired up with game programming patterns such as state, observer and command.</p>
+            <p>Burger Time is an arcade classic, where the player must assemble all the burgers on the level while avoiding enemies. Being revisited and revamped on a new engine, it is presented with additional functionality, like co-op and a custom scoreboard.</p>
+            <p>View both the Game Engine and Burger Time source on
+              <a href="https://github.com/Samir-V/Samir-V-GameEngine" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  github.
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <h2>Advanced Geometric Arcader</h2>
+          </div>
+          <img src="TimeChainedLogo.png" alt="BurgerTime.png">
+          <div class="extra-info">
+            <p>While studying at Howest University, I had the pleasure of discovering a new paradigm of Math, called Geometric Algebra.</p>
+            <p>Geometric Algebra is not just a new Math topic. It is a whole other way of thinking and interpreting geometry, where operations based on multiple matrices are replaced with a pair of primitives.</p>
+            <p>Advanced Geometric Arcader is a simple game where the cube-like player avoids enemies and gathers energy for missiles while rotating around moving blocks. It is fully written in C++, using a custom library made for the course, and features no vector math at all.</p>
+            <p>View Advanced Geometric Arcader source on
+              <a href="https://github.com/Samir-V/Advanced-Geometric-Arcader" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  github.
+              </a>
+            </p>
           </div>
         </article>
       </div>
@@ -99,23 +151,35 @@
       <div class="projects-grid">
         <article class="project-card">
           <div class="card-header">
-            <h2>TimeChained</h2>
+            <h2>Game Plugin Development</h2>
           </div>
-          <img src="test.png" alt="TimeChained screenshot">
+          <figure>
+            <img src="SCPLogo.jpg" alt="SCPSLLogo.png">
+            <figcaption style="color: #ddd;">
+              The logo belongs to &copy; [Northwood Studios]. Used to demonstrate the game that I developed plugins for.
+            </figcaption>
+          </figure>
           <div class="extra-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
+            <p>For more than a year I belong to a team of plugin developers on one of the biggest community server group for the Unity-based game called SCP Secret Laboratory.</p>
+            <p>SCP Secret Laboratory is a multiplayer game that supports up to 40 concurrent players in the server, with each one having their special role and rules to follow.</p>
+            <p>As a part of the team, it was my responsibility to receive tasks from the multiple server leads, tailoring them to their needs, respond to bug reports and implement fixes, as well as participate in code review of other developers plugins.</p>
+            <p>You can visit the store page of SCP Secret Laboratory below.</p>
+            <iframe src="https://store.steampowered.com/widget/700330/" frameborder="0" class="video-preview"></iframe>
           </div>
         </article>
 
         <article class="project-card">
           <div class="card-header">
-            <h2>TimeChained</h2>
+            <h2>Quest System in UE5 C++</h2>
           </div>
-          <img src="test.png" alt="TimeChained screenshot">
+          <img src="TimeChainedLogo.png" alt="TimeChainedLogo.png">
           <div class="extra-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="https://github.com/your-link" target="_blank">View on GitHub</a>
+            <p>As a personal project and a learning opportunity, I decided to design and implement a quest system in Unreal Engine 5.5, fully using C++.</p>
+             <p>You can view the current progress on 
+              <a href="https://github.com/Samir-V/QuestSystem-UE5" style="color: #4ecdc4; text-decoration: none;" target="_blank">
+                  github.
+              </a>
+            </p>
           </div>
         </article>
       </div>

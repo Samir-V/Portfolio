@@ -164,39 +164,30 @@ body {
   font-size: 1rem;
   color: #ccc;
 }
-.project-card a {
-  display: inline-block;
-  margin-top: 16px;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 20px;
-  border-radius: 4px;
-  background-color: #3ed6cb;
-  color: #0a2342;
-  font-weight: bold;
-}
+
 .project-card a:hover {
-  background-color: #2bc2b7;
+  color: #2bc2b7;
 }
 
 .extra-info {
   background-color: #112a43;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
+  transition: max-height 0.4s ease, padding-top 0.4s ease, padding-bottom 0.4s ease;
   padding: 0 16px;
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 .extra-info p {
   margin: 16px 0;
   color: #ddd;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
 }
 
 .project-card.expanded .extra-info {
-  max-height: 500px; 
+  max-height: 2000px; 
   padding-bottom: 16px;
   padding-top: 16px;
 }
@@ -213,6 +204,38 @@ body {
 }
 .extra-info .btn:hover {
   background-color: #4ecdc4;
+}
+
+.video-preview {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.video-preview img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.video-preview:hover .play-icon {
+    opacity: 1;
+    color: #4ecdc4;
 }
 
 .card-header {
