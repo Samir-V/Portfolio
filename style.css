@@ -166,10 +166,6 @@ body {
   color: #ccc;
 }
 
-.project-card a:hover {
-  color: #2bc2b7;
-}
-
 .extra-info {
   background-color: #112a43;
   max-height: 0;
@@ -193,18 +189,30 @@ body {
   padding-top: 16px;
 }
 
-.extra-info .btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  background-color: #4ecdc4;
-  color: #0a2342;
-  font-weight: bold;
-  margin-bottom: 16px;
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 10px;        
+  margin-top: 1em;
 }
-.extra-info .btn:hover {
+
+.btn-link {
   background-color: #4ecdc4;
+  text-decoration: none;
+  padding: 20px 76px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px; 
+  color: #0a2342;
+}
+
+.btn-link:hover {
+  background-color: #3bb5ad;
+  color: #0a2342;
 }
 
 .video-preview {
@@ -212,31 +220,8 @@ body {
   display: block;
   width: 100%;
   max-width: 560px;
+  height: 315px;
   margin: 0 auto;
-}
-
-.video-preview img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 72px;
-    color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.video-preview:hover .play-icon {
-    opacity: 1;
-    color: #4ecdc4;
 }
 
 .card-header {
@@ -282,9 +267,10 @@ body {
   margin: 1rem auto 0;
   text-decoration: none;
   text-align: center;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 4px;
   background-color: #4ecdc4;
+  transition: background-color 0.3s ease;
   color: #0a2342;
   font-weight: bold;
   align-self: center;
