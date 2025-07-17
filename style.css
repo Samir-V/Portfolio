@@ -342,15 +342,10 @@ footer p {
   #intro h1 {
     font-size: 2.5rem;
   }
-  .divider {
-    width: 150px;
-  }
   .divider span {
     font-size: 1.25rem;
   }
-}
 
-@media (max-width: 600px) {
   nav {
     padding: 10px 10px;
   }
