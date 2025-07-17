@@ -239,7 +239,9 @@ body {
   margin: 0;
   font-size: 2rem;
   color: #ddd;
-  white-space: nowrap;               
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;            
 }
 
 #contact p {
