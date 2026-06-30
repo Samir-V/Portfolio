@@ -24,12 +24,41 @@
 </head>
 
 <body>
+  <div class="bg-decor" aria-hidden="true">
+    <div class="glow glow-teal"></div>
+    <div class="glow glow-amber"></div>
+  </div>
+
+  <div class="bg-dots" aria-hidden="true">
+    <span class="dot dot-teal" style="top:4%; left:3%; width:10px; height:10px; opacity:.35;"></span>
+    <span class="dot dot-amber" style="top:8%; left:5.5%; width:17px; height:17px; opacity:.2;"></span>
+    <span class="dot dot-teal" style="top:11%; left:2%; width:8px; height:8px; opacity:.4;"></span>
+
+    <span class="dot dot-amber" style="top:19%; right:4%; width:20px; height:20px; opacity:.2;"></span>
+    <span class="dot dot-teal" style="top:25%; right:7.5%; width:11px; height:11px; opacity:.32;"></span>
+
+    <span class="dot dot-teal" style="top:38%; right:3%; width:14px; height:14px; opacity:.3;"></span>
+
+    <span class="dot dot-teal" style="top:47%; left:6%; width:9px; height:9px; opacity:.38;"></span>
+    <span class="dot dot-amber" style="top:50%; left:3%; width:15px; height:15px; opacity:.25;"></span>
+    <span class="dot dot-teal" style="top:60%; left:7.5%; width:12px; height:12px; opacity:.3;"></span>
+
+    <span class="dot dot-amber" style="top:67%; right:5%; width:18px; height:18px; opacity:.2;"></span>
+
+    <span class="dot dot-teal" style="top:77%; right:4%; width:10px; height:10px; opacity:.35;"></span>
+    <span class="dot dot-amber" style="top:80%; right:7%; width:14px; height:14px; opacity:.24;"></span>
+
+    <span class="dot dot-teal" style="top:88%; left:3%; width:11px; height:11px; opacity:.32;"></span>
+    <span class="dot dot-amber" style="top:92%; left:6%; width:20px; height:20px; opacity:.18;"></span>
+    <span class="dot dot-teal" style="top:98%; left:1.5%; width:9px; height:9px; opacity:.4;"></span>
+  </div>
+
   <header>
     <nav>
       <ul class="nav-links">
         <li><a href="#intro" class="nav-link active">Home</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#current" class="nav-link">Current Work</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -46,11 +75,11 @@
 
     <div class="about-box">
       <p>
-        I am a game development student that is kicking off his career as a developer. In the last 2 years I have worked on games, game plugins, a 2D game engine and math-driven projects based on geometric algebra. My primary programming languages are C++ and C#, with additional experience in Lua and Python, gained through work with game engines such as Unity and Unreal, as well as personal projects.
+        I am an aspiring software and tool developer that is kicking off his career. In the last 3 years I have worked on games, game plugins, VR applications, tools and math-driven projects based on geometric algebra. My primary programming languages are C++ and C#, with additional experience in Lua and Python, gained through work with game engines such as Unity and Unreal, as well as personal projects.
       </p>
 
       <p>
-        What makes me passionate about code is the process when lines of logic turn into something real. A feature that users enjoy, rely on, and find genuinely useful.
+        What makes me passionate about code is the process when lines of logic turn into something real. A feature, a tool, that users enjoy, rely on, and find genuinely useful. 
       </p>
 
       <p>
@@ -68,6 +97,11 @@
         <article class="project-card">
           <div class="card-header">
             <h2>TimeChained</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">2D</span>
+              <span class="tech-tag">Game Jam</span>
+            </div>
           </div>
           <img src="TimeChained.gif" alt="TimeChainedLogo.png">
           <div class="extra-info">
@@ -88,6 +122,10 @@
         <article class="project-card">
           <div class="card-header">
             <h2>Reel Or Nothing!</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Co-op</span>
+              <span class="tech-tag">Multiplayer</span>
+            </div>
           </div>
           <img src="ReelOrNothing.gif" alt="ReelOrNothingLogo.png">
           <div class="extra-info">
@@ -107,6 +145,11 @@
         <article class="project-card">
           <div class="card-header">
             <h2>2D Game Engine - feat. Burger Time</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Custom Engine</span>
+              <span class="tech-tag">Arcade</span>
+            </div>
           </div>
           <img src="BurgerTime.gif" alt="BurgerTime.png">
           <div class="extra-info">
@@ -124,6 +167,10 @@
         <article class="project-card">
           <div class="card-header">
             <h2>Advanced Geometric Arcader</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Geometric Algebra</span>
+            </div>
           </div>
           <img src="GEOA_Arcader.gif" alt="Arcader.png">
           <div class="extra-info">
@@ -141,15 +188,43 @@
     </div>
   </section>
 
-  <section id="current">
+  <section id="experience">
     <div class="divider">
-      <span>CURRENT WORK</span>
+      <span>PROFESSIONAL EXPERIENCE</span>
     </div>
     <div class="wrapper">
       <div class="projects-grid">
         <article class="project-card">
           <div class="card-header">
+            <h2>Developer Intern @ Soulmade</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">Unreal Engine 5</span>
+              <span class="tech-tag">VR</span>
+              <span class="tech-tag">MetaHuman</span>
+            </div>
+          </div>
+          <img src="SoulmadeLogo.png">
+          <div class="extra-info">
+            <p>Soulmade is a small XR/VR and AI-focused studio based in Antwerp, Belgium.</p>
+            <p>During my four-month internship, I worked across both Unity and Unreal Engine 5, creating VR-based apps and MetaHuman-driven character work, alongside internal tooling for the team.</p>
+            <p>I have worked to provide working apps for MetaQuest 3 and PICO 4 Ultra headsets, supporting hand tracking and multiplayer.</p>
+            <div class="button-container">
+              <a href="https://www.soulmade.eu/" class="btn-link" target="_blank">
+                Visit Soulmade
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
             <h2>Game Plugin Development</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Live Server</span>
+            </div>
           </div>
           <figure>
             <img src="SCPLogo.jpg" alt="SCPSLLogo.png">
@@ -164,21 +239,6 @@
             <div class="button-container">
               <a href="https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/" class="btn-link" target="_blank">
                 View on Steam
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="card-header">
-            <h2>Quest System in UE5 C++</h2>
-          </div>
-          <img src="QuestSystem.png" alt="QuestSystem.png">
-          <div class="extra-info">
-            <p>As a personal project and a learning opportunity, I decided to design and implement a quest system in Unreal Engine 5.5, fully using C++.</p>
-            <div class="button-container">
-              <a href="https://github.com/Samir-V/QuestSystem-UE5" class="btn-link" target="_blank">
-                View on GitHub
               </a>
             </div>
           </div>
@@ -265,6 +325,23 @@
       card.classList.toggle('expanded');
     });
   });
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    document.documentElement.classList.add('js-reveal-ready');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.project-card').forEach(card => revealObserver.observe(card));
+  }
   </script> 
 
 </body>
